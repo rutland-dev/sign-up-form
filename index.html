@@ -7,94 +7,90 @@
     <title>Dungeons Under Andenmeet</title>
   </head>
   <body>
-    <div id="side-image-container">
-      <img
-        src="images/andenmeet.png"
-        alt="A medieval fantasy city in the mountains with a view of the dungeon that lies beneath the city."
-      />
-      <div class="shadow"></div>
-    </div>
-    <div id="main-container">
-      <div class="header">
-        <h1>Dungeons Under Andenmeet</h1>
+      <div id="image-container">
+        <img
+          src="images/andenmeet.png"
+          alt="A medieval fantasy city in the mountains with a view of the dungeon that lies beneath the city."
+        />
+        <div class="shadow"></div>
       </div>
-      <div class="blurb">
-        <h2>
-          Create an account and venture forth to claim lost treasure and power.
-        </h2>
-      </div>
-      <div id="form-container">
-        <div id="inner-form-container">
-          <form action="" method="post" onsubmit="return checkPassword(this)">
-            <div class="form-row">
-              <label for="fName">First Name</label>
-              <input
-                type="text"
-                id="fName"
-                name="fName"
-                required
-                placeholder="First"
-              />
+            <div id="content-container">
+              <div class="header">
+                <h1>Dungeons Under Andenmeet</h1>
+              </div>
+              <div class="blurb">
+                <p>
+                  Create an account and venture forth to claim lost treasure and power.
+                </p>
+              </div>
+                  <form action="" method="post" onsubmit="return checkPassword(this)">
+                    <div class="form-item">
+                      <label for="fName">First Name</label>
+                      <input
+                        type="text"
+                        id="fName"
+                        name="fName"
+                        required
+                        placeholder="First"
+                      />
+                    </div>
+                    <div class="form-item">
+                      <label for="lName">Last name</label>
+                      <input
+                        type="text"
+                        id="lName"
+                        name="lName"
+                        required
+                        placeholder="Last"
+                      />
+                    </div>
+                    <div class="form-item">
+                      <label for="userName">Username</label>
+                      <input
+                        type="text"
+                        id="userName"
+                        name="userName"
+                        required
+                        placeholder="Login name"
+                      />
+                    </div>
+                    <div class="form-item">
+                      <label for="email">Email</label>
+                      <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        required
+                        placeholder="fake@email.com"
+                      />
+                    </div>
+                    <div class="form-item">
+                      <label for="password">Password</label>
+                      <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        required
+                        placeholder="whatever"
+                      />
+                      
+                    </div>
+                    <div class="form-item">
+                      <label for="confirmPassword">Confirm Password</label>
+                      <input
+                        type="password"
+                        id="confirmPassword"
+                        name="confirmPassword"
+                        required
+                        placeholder="whatever"
+                      />
+                    </div>
+                    <div class="submit-button">
+                      <button>Submit</button><span></span>
+                    </div>
+                  </form>
+              <div class="footer"></div>
             </div>
-            <div class="form-row">
-              <label for="lName">Last name</label>
-              <input
-                type="text"
-                id="lName"
-                name="lName"
-                required
-                placeholder="Last"
-              />
-            </div>
-            <div class="form-row">
-              <label for="userName">Username</label>
-              <input
-                type="text"
-                id="userName"
-                name="userName"
-                required
-                placeholder="Login name"
-              />
-            </div>
-            <div class="form-row">
-              <label for="email">Email</label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                required
-                placeholder="fake@email.com"
-              />
-            </div>
-            <div class="form-row">
-              <label for="password">Password</label>
-              <input
-                type="password"
-                id="password"
-                name="password"
-                required
-                placeholder="whatever"
-              />
-              <span></span>
-            </div>
-            <div class="form-row">
-              <label for="confirmPassword">Confirm Password</label>
-              <input
-                type="password"
-                id="confirmPassword"
-                name="confirmPassword"
-                required
-                placeholder="whatever"
-              />
-            </div>
-            <div class="submit-button">
-              <button>Submit</button>
-            </div>
-          </form>
-        </div>
-      </div>
-      <div class="footer"></div>
-    </div>
     <script>
       // Function to check Whether both passwords
       // is same or not.

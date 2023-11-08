@@ -1,160 +1,61 @@
 @font-face {
-  font-family: NorseBold;
-  src: url("/home/forestmusic/odin-project/repos/sign-up-form/fonts/Norse-Bold.otf");
-}
-
-* {
-  font-family: NorseBold;
-  color: rgba(255, 255, 255, 0.6);
+  font-family: Norse-Bold;
+  src: url(../fonts/Norse-Bold.otf);
 }
 
 body {
   height: 100vh;
   width: 100vw;
-  margin: 0;
+  margin: 3%;
   padding: 0;
-  display: flex;
-  color: lightgray;
   background-color: black;
+  color: darkgray;
+  font-family: Norse-Bold;
+  font-size: 1.5rem;
 }
 
-label {
-  font-size: 2rem;
-}
-
-#side-image-container img {
-  height: 100%;
-}
-
-.shadow {
-  position: absolute;
-  float: left;
-  width: 52.5%;
-  height: 100%;
-  box-shadow: 0 0 3rem 3rem black inset;
-  top: 0;
-  bottom: 0;
-}
-
-#main-container {
+#image-container {
   width: 100%;
+}
+
+#image-container img {
+  width: 100%;
+}
+
+#content-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
 }
 
 .header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 100%;
-  height: 60px;
-  margin-top: 15px;
-  margin-bottom: 40px;
-  background-image: linear-gradient(
-    rgba(23, 24, 24, 0),
-    rgba(23, 24, 24, 0.5),
-    rgba(23, 24, 24, 0)
-  );
+  text-align: center;
 }
 
 h1 {
-  font-size: 5rem;
-}
-
-#form-container {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  background-color: rgb(23, 24, 24);
-}
-#inner-form-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  width: 100%;
-  background-color: rgb(23, 24, 24);
-}
-form {
-  display: grid;
-  width: 70%;
-  height: 100%;
-  grid-template-columns: repeat(2, 50%);
-  grid-template-rows: 10em 10em 10em 10em;
-  background-color: rgb(23, 24, 24);
-}
-
-.form-row input {
-  width: 250px;
-  height: 30px;
-  color: black;
-  font-size: 1.5rem;
-  font-family: Arial, Helvetica, sans-serif;
-  border: 1px solid silver;
-  border-radius: 5px;
-  margin-top: 10px;
-}
-
-.form-row {
-  display: block;
-  align-items: center;
-  justify-content: center;
-  padding: 10px;
-  width: 300px;
-  margin: 0 50px;
-}
-
-input[type="text"],
-input[type="password"],
-input[type="email"] {
-  background-color: whitesmoke;
-}
-
-.submit-button {
-  margin: 0 0 0 295px;
-}
-
-.submit-button button {
-  width: 200px;
-  height: 40px;
-  color: black;
-  font-size: 1.5rem;
-  border-radius: 5px;
+  font-size: 3rem;
 }
 
 .blurb {
+  text-align: center;
+  margin: 0 2%;
+}
+
+form {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  background-color: rgb(23, 24, 24);
-  padding: 40px 0;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 10px;
+  width: 80%;
 }
 
-input[type="text"]:not(:placeholder-shown):invalid,
-input[type="password"]:not(:placeholder-shown):invalid,
-input[type="email"]:not(:placeholder-shown):invalid {
-  border: 2px solid red;
+.form-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 2%;
 }
 
-.footer {
-  height: 80%;
-  width: 100%;
-  background-image: linear-gradient(
-    rgba(23, 24, 24, 0),
-    rgba(23, 24, 24, 0.5),
-    rgba(23, 24, 24, 0)
-  );
-}
+@media (width > 480px) {
 
-span {
-  color: red;
-  font-size: 1.2rem;
-  font-family: Arial, Helvetica, sans-serif;
 }
