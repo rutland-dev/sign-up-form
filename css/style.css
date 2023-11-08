@@ -88,3 +88,57 @@ form {
     margin: 0 0 3% 0;
   }
 }
+
+@media (min-width: 1025px) {
+  body {
+    display: flex;
+    margin: 0;
+  }
+
+  #image-container {
+    height: 100%;
+    width: auto;
+  }
+
+  #image-container img {
+    height: 100%;
+    width: auto;
+  }
+
+  #content-container {
+    width: 100%;
+  }
+
+  .header {
+    width: 100%;
+    text-align: center;
+    max-height: 20%;
+  }
+
+  h1 {
+    font-size: 5rem;
+  }
+
+  .blurb {
+    min-height: 20%;
+  }
+
+  form {
+    grid-template-columns: 1fr 1fr;
+    gap: 10%;
+    height: 50%;
+  }
+
+  .form-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10%;
+    min-width: 0;
+  }
+
+  .form-item input {
+    height: 30%;
+    font-size: 25px;
+  }
+}
