@@ -35,6 +35,7 @@ body {
 
 h1 {
   font-size: 3rem;
+  container-type: size;
 }
 
 .blurb {
@@ -107,20 +108,22 @@ form {
 
   #content-container {
     width: 100%;
+    gap: 10%;
   }
 
   .header {
     width: 100%;
     text-align: center;
-    max-height: 20%;
+    margin-bottom: 15%;
   }
 
   h1 {
     font-size: 5rem;
+    min-width: 13ch;
   }
 
   .blurb {
-    min-height: 20%;
+    margin-bottom: 15%;
   }
 
   form {
