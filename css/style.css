@@ -31,11 +31,13 @@ body {
 .header {
   width: 100%;
   text-align: center;
+  margin-bottom: 15%;
 }
 
 h1 {
   font-size: 3rem;
   container-type: size;
+  margin-bottom: 15%;
 }
 
 .blurb {
@@ -58,6 +60,19 @@ form {
 }
 
 @media (min-width: 480px) {
+
+  .header {
+    margin-bottom: 5%;
+  }
+
+  h1 {
+    margin-bottom: 5%;
+  }
+
+  .blurb {
+    margin-bottom: 10%;
+  }
+
   form {
     display: grid;
   }
@@ -88,6 +103,19 @@ form {
   #content-container {
     margin: 0 0 3% 0;
   }
+
+  .header {
+    margin-bottom: 5%;
+  }
+
+  h1 {
+    margin-bottom: 5%;
+  }
+
+  .submit-button {
+    justify-self: center;
+  }
+
 }
 
 @media (min-width: 1025px) {
@@ -114,7 +142,6 @@ form {
   .header {
     width: 100%;
     text-align: center;
-    margin-bottom: 15%;
   }
 
   h1 {
@@ -144,4 +171,9 @@ form {
     height: 30%;
     font-size: 25px;
   }
+
+  .submit-button {
+    justify-self: center;
+  }
+  
 }
